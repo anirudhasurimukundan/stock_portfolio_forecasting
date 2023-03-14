@@ -34,4 +34,9 @@ enddate = dt.datetime.now()
 startdate = enddate - dt.timedelta(days=300)
 meanReturns, covMatrix = get_data(stocks, startdate, enddate)
 
+# Define weights
+weights = np.random.random(len(meanReturns))
+
+# Normalize the weights
+weights /= np.sum(weights)
 
