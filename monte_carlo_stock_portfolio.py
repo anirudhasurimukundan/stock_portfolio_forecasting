@@ -45,7 +45,7 @@ if __name__ == "__main__":
     # Number of simulations
     num_monte_carlo_simulations = 100
     # Number of days
-    T = 10
+    T = 5000
 
     # Define the mean matrix
     meanMatrix = np.full(shape=(T, len(weights)), fill_value=meanReturns)
